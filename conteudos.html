@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Now!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles/nav-bar.css">
+    <link rel="stylesheet" href="assets/styles/var.css">
+    <link rel="stylesheet" href="assets/styles/section.css">
+    <link rel="stylesheet" href="assets/styles/fotter.css">
+
+</head>
+<body>
+
+    <header class="nav-bar">
+        <a class="icon" href="index.html"><h1>Math Now!</h1></a>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="conteudos.html">CONTEUDOS</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+            </ul>
+        </nav>
+        <input type="checkbox" id="MostrarMenu">
+
+        <label for="MostrarMenu">
+            <i id="menu-icon" class="nav-menu-icon fa fa-bars" aria-hidden="true"></i>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="conteudos.html">CONTEUDOS</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                </ul>
+            </nav>
+        </label>
+    </header>
+
+
+<section class="banner">
+
+</section>
+
+<section style="gap: 30px;" class="section">
+    <nav class="search_field">
+        <input type="text" class="search_bar" name="SearchBar" id="SearchBar" placeholder="Digite o conteúdo desejado" onkeyup="search()">
+    </nav>
+    <article class="search_items">
+        <div class="content_card">
+            <h1 class="card_title">Regra de Três</h1>
+            <h2>Método fácil para o calculo de grandezas</h2>
+            <a href="assets/pages/RegraDeTres.html">Saiba mais</a>
+        </div>
+        <div class="content_card">
+            <h1 class="card_title">Conjuntos Numéricos</h1>
+            <h2>São conjuntos na qual podemos separar cada número</h2>
+            <a href="assets/pages/Conjuntos.html">Saiba mais</a>
+        </div>
+        <div class="content_card">
+            <h1 class="card_title">Equação de Primeiro Grau</h1>
+            <h2>Equação denomida por <strong>a</strong> e <strong>b</strong></h2>
+            <a href="assets/pages/EquacaoSt.html">Saiba mais</a>
+        </div>
+        <div class="content_card">
+            <h1 class="card_title">Equação de Segundo Grau</h1>
+            <h2>Equação que é caracterizado pelo coeficientes <strong>a</strong>, <strong>b</strong> e <strong>c</strong></h2>
+            <a href="assets/pages/EquacaoNd.html">Saiba mais</a>
+        </div>
+        <div class="content_card">
+            <h1 class="card_title">Função Exponêncial</h1>
+            <h2>Função na qual nós trabalhamos com as porpriedades de potência</h2>
+            <a href="assets/pages/FuncaoExponencial.html">Saiba mais</a>
+        </div>
+        <div class="content_card">
+            <h1 class="card_title">Função Logarítmica</h1>
+            <h2>Uma forma antiga mas eficiente de escrever números longos</h2>
+            <a href="assets/pages/Logaritmo.html">Saiba mais</a>
+        </div>
+    </article>
+</section>
+
+
+<fotter class="fotter">
+    <h1>@Site do Kaynã e Lucas</h1>
+</fotter>
+
+    <script src="assets/JavaScript/script.js">
+    </script>
+</body>
+</html>

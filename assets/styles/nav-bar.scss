@@ -1,0 +1,114 @@
+
+
+.nav-bar{
+    position: fixed;
+    z-index: 1!important;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 57px;
+    width: 100%;
+
+    .icon{
+        position: absolute;
+        left: 0;
+        margin: 18px;   
+        color: var(--banner-bg-color);
+    }
+
+    .nav-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 30px;
+        font-size: 20px;
+        li a{
+            color: var(--font-color);
+            font-weight: 600;
+        }
+    }
+    .nav-menu-icon{
+        position: absolute;
+        display: none;
+        right: 20px;
+        top:15px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        right: -100%;
+        top: 57px;
+        height: calc(100vh - 57px);
+        width: 30vw;
+        font-size: 20px;
+        padding-top: 20px;
+        background-color: var(--fotter-smoth-bg-color);
+        li a{
+            color: var(--bg-color);
+            font-weight: 600;
+        }
+    }
+    input[type=checkbox]{
+        display: none;
+    }
+    input:checked + label .nav-menu{
+        right: 1px;
+        transition: 0.4s;
+        display: flex;
+    }
+    input + label .nav-menu{
+        transition: 0.8s;
+    }
+}
+
+@media (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    .nav-bar{
+        .nav-items{
+            display: none;
+        }
+        .nav-menu-icon{
+            display: block;
+        }
+
+        .nav-menu{
+            width: 50vw;
+        }
+    }}
+}
+
+@media (max-width: 500px) {
+    body{
+        overflow-x: hidden;
+    .nav-bar{
+        .nav-items{
+            display: none;
+        }
+        .nav-menu-icon{
+            display: block;
+        }
+
+        .nav-menu{
+            width: 100%;
+            height: auto;
+            padding-bottom: 20px;
+            height: 100vh;
+            font-size: 2rem;
+        }
+    }
+}
+}
+
+
+
