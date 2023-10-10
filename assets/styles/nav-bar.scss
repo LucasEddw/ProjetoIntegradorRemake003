@@ -27,9 +27,28 @@
         
         gap: 30px;
         font-size: 20px;
-        li a{
-            color: var(--font-color);
-            font-weight: 600;
+        li{
+            a{
+                color: var(--font-color);
+                font-weight: 600;
+                position: relative;
+            }
+            a:before{
+                content: "";
+                position: absolute;
+                bottom: -3px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0%;
+                height: 3px;
+                transition: 0.3s;
+                background-color: #45b2fb;
+                border-radius: 5px;
+            }
+            a:hover::before{
+                transition: 0.3s;
+                width: 100%;
+            }
         }
     }
     .nav-menu-icon{

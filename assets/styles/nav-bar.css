@@ -26,6 +26,23 @@
 .nav-bar .nav-items li a {
   color: var(--font-color);
   font-weight: 600;
+  position: relative;
+}
+.nav-bar .nav-items li a:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 3px;
+  transition: 0.3s;
+  background-color: #45b2fb;
+  border-radius: 5px;
+}
+.nav-bar .nav-items li a:hover::before {
+  transition: 0.3s;
+  width: 100%;
 }
 .nav-bar .nav-menu-icon {
   position: absolute;
