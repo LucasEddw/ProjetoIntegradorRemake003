@@ -13,10 +13,6 @@
     <link rel="stylesheet" href="assets/styles/section.css">
     <link rel="stylesheet" href="assets/styles/fotter.css">
 
-    <style>
-
-    </style>
-
 </head>
 
 <body>
@@ -69,7 +65,19 @@
     <!-- ----------//----------//----------//----------//----------//----------//----------// -->
 
 
+
     <section class="section">
+
+        <aside class="aside">
+            <nav class="aside-nav">
+                <h1>Conteúdos</h1>
+                <ul>
+                    <li onclick="rolar(350)" class="aside-item">Regra de Três</li>
+                    <li onclick="rolar(800)" class="aside-item">Função Exponencial</li>
+                    <li onclick="rolar(1250)" class="aside-item">Equação de Segundo Grau</li>
+                </ul>
+            </nav>
+        </aside>
 
         <article class="content">
             <h1 class="title">Regra de Três</h1>
@@ -79,9 +87,8 @@
                 especialmente útil quando você precisa encontrar um valor desconhecido com base em proporções
                 estabelecidas por outras quantidades conhecidas.
             </p>
-            <a href="assets/pages/RegraDeTres.html">Ver Mais</a>
+            <a class="home" href="assets/pages/RegraDeTres.html">Ver Mais</a>
         </article>
-
         <article class="content">
             <h1 class="title">Função Exponencial</h1>
             <h2 class="data">19/09/2023</h2>
@@ -89,9 +96,8 @@
                 distintas e é amplamente utilizada em várias áreas da matemática, ciências naturais, engenharia,
                 economia e muito mais. Para entender melhor as propriedades de uma função exponencial, é essencial
                 observar os seguintes aspectos.</p>
-            <a href="assets/pages/FuncaoExponencial.html">Ver Mais</a>
+            <a class="home" href="assets/pages/FuncaoExponencial.html">Ver Mais</a>
         </article>
-
         <article class="content">
             <h1 class="title">Equação de Segundo Grau</h1>
             <h2 class="data">19/09/2023</h2>
@@ -100,7 +106,7 @@
                 como coeficientes da equação. Essa forma de equação é fundamental na álgebra e é amplamente utilizada
                 para modelar uma variedade de fenômenos da vida real que envolvem relações quadráticas entre variáveis.
             </p>
-            <a href="assets/pages/EquacaoNd.html">Ver Mais</a>
+            <a class="home" href="assets/pages/EquacaoNd.html">Ver Mais</a>
         </article>
 
     </section>
@@ -124,7 +130,16 @@
 
 
 
-    <script src="assets/JavaScript/script.js">
+    <script src="script.js">
+        const botaoRolarParaOTopo = document.getElementById('botao-rolar-para-o-topo');
+
+        botaoRolarParaOTopo.addEventListener('click', () => {
+            // Use 'scrollTo' para rolar suavemente de volta para o topo da página
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Adiciona um efeito de rolagem suave
+            });
+        });
     </script>
 
 </body>

@@ -12,13 +12,50 @@
     flex-direction: column;
     
     color: var(--font-color);
-    padding:8vw 12vw 12vw 12vw;
+    padding:8vw 16vw 12vw 12vw;
     gap: 100px;
     background: var(--bg-color);
+
+    .aside{
+        position: absolute;
+        right: 4vw;
+        width: 20%;
+        .aside-nav{
+            font-size: 24px;
+            font-weight: 400;
+            h1{
+                font-size: 30px;
+                transform: translateX(-25px);
+            }
+            ul{
+                display: flex;
+                justify-content: start;
+                align-items: start;
+                flex-direction: column;
+                gap: 20px;
+                
+                .aside-item{
+                    position: relative;
+                    cursor: pointer;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: -1.4rem;
+                        font-weight: 900;
+                        font-size: 18px;
+                        top: 0.25rem;
+                        color: #0982d2;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
 
     .content{
         display: flex;
         flex-direction: column;
+        width: 80%;
         .data{
             font-size: 16px;
             margin-bottom: 16px;
@@ -33,7 +70,7 @@
             letter-spacing: 0.1rem;
             margin-bottom: 20px;
         }
-        a{
+        a.home{
             color: var(--bg-color);
             font-size: 1.2rem;
             padding: 10px 20px;
@@ -42,6 +79,19 @@
             background-color: var(--banner-bg-color);
             width: 130px;
             text-align: center;
+        }
+        .ref{
+            display: flex;
+            flex-direction: column;
+            a.link{
+            color: var(--banner-bg-color);
+            font-size: 1.2rem;
+            font-weight: 900;
+            margin: 5px;
+                i{
+                    margin-left: 5px;
+                }
+            }
         }
 
         h2:not(.data){
@@ -124,7 +174,11 @@
     .section{
         padding: 4vw 6vw 6vw 6vw;
         gap: 70px;
+        .aside{
+            display: none;
+        }
         .content{
+            width: 100%;    
             .title{
                 font-size: 45px;
             }

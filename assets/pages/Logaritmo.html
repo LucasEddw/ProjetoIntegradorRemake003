@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Now!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles/nav-bar.css">
     <link rel="stylesheet" href="../styles/var.css">
     <link rel="stylesheet" href="../styles/section.css">
     <link rel="stylesheet" href="../styles/fotter.css">
 
 </head>
+
 <body>
 
     <header class="nav-bar">
-        <a class="icon" href="../../index.html"><h1>Math Now!</h1></a>
+        <a class="icon" href="../../index.html">
+            <h1>Math Now!</h1>
+        </a>
         <nav>
             <ul class="nav-items">
                 <li><a href="../../index.html">HOME</a></li>
@@ -37,34 +43,97 @@
     </header>
 
 
-<section class="banner">
+    <section class="banner">
 
-</section>
+    </section>
 
-<section class="section">
-    <article class="content">
-        <div>
-            <h1 class="title">Função Logarítmica</h1>
-            <h2 class="data">19/09/2023</h2>
-            <p class="text">
-                Uma função logarítmica de base "a" é um conceito fundamental na matemática que descreve a relação entre um número "x" e seu logaritmo na base "a." Essa função é frequentemente denotada como f(x) = logₐ(x), onde "a" é um número real positivo e diferente de 1.
-            </p>
-            <p class="text">
-                Definição Fundamental: O logaritmo de um número "x" na base "a" é o expoente ao qual a base "a" deve ser elevada para produzir o número "x". Em outras palavras, se logₐ(x) = y, isso significa que a^y = x. O logaritmo é uma maneira de desfazer uma operação de exponenciação, revelando o poder (ou expoente) necessário para obter um resultado específico.
-            </p>
-            <p class="text">
-                Base Positiva e Diferente de Um: A base "a" da função logarítmica deve ser um número real positivo e diferente de 1. Isso garante que o logaritmo seja bem definido e que as propriedades fundamentais da função sejam preservadas.
-            </p>
-        </div>
-    </article>
-</section>
+    <section class="section">
+
+        <aside class="aside">
+            <nav class="aside-nav">
+                <h1>Conteúdos</h1>
+                <ul>
+                    <li onclick="rolar(350)" class="aside-item">Logaritmo</li>
+                    <li onclick="rolar(1180)" class="aside-item">Exemplos</li>
+                    <li onclick="rolar(2500)" class="aside-item">Referências</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <article class="content">
+            <div>
+                <h1 class="title">Logaritmo</h1>
+                <h2 class="data">19/09/2023</h2>
+                <p class="text">
+                    Logaritmo de um número b na base a é igual ao expoente x ao qual se deve elevar a base, de modo que a potência a elevado a x seja igual a b, sendo a e b números reais e positivos e a≠1.
+                </p>
+                <p class="text">
+                    logaritmo é a uma operação na qual queremos descobrir o expoente que uma dada base deve ter para resultar em uma certa potência.
+                </p>
+                <p class="text">
+                    Definição de logaritmo: 
+                </p>
+
+                <img src="../img/logaritmo.webp" alt="Definição de Logaritmo">
+                <p class="text">
+                    logaritmo de b na base a, sendo a > 0 e a ≠ 1 e b > 0.
+                </p>
+                <p class="text">
+                    Quando a base de um logaritmo for omitida, significa que seu valor é igual a 10. Este tipo de logaritmo é chamado de logaritmo decimal.
+                </p>
+            </div>
+
+            <div>
+                <h2>Exemplos</h2>
+                <p class="text">
+                    Qual o valor do log3 81?
+                </p>
+
+                <h3>Solução:</h3>
+
+                <p class="text">
+                    Neste exemplo, queremos descobrir qual expoente devemos elevar o 3 para que o resultado seja igual a 81. Usando a definição, temos:
+                </p>
+
+                <p class="text">
+                    log3 81 = x ⇔ 3x = 81
+                </p>
+                <p class="text">
+                    Para encontrar esse valor, podemos fatorar o número 81, conforme indicado abaixo:
+                </p>
+                
+                <img style="width: 30%;" src="../img/logaritmo2.jpeg" alt="Fatoração">
+
+                <p class="text">
+                    Substituindo o 81 por sua forma fatorada, na equação anterior, temos:
+                </p>
+                <p class="text">
+                    3x = 34
+                </p>
+                <p class="text">
+                    Como as bases são iguais, chegamos a conclusão que x = 4.
+                </p>
+            </div>
+
+            <div>
+                <h2>Referências</h2>
+                <div class="ref">
+                    <a class="link"
+                        href="https://www.todamateria.com.br/logaritmo/">todamateria.com.br<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a class="link"
+                        href="https://brasilescola.uol.com.br/matematica/logaritmo.htm">brasilescola.uol.com.br<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </article>
+    </section>
 
 
-<fotter class="fotter">
-    <h1>@Site do Kaynã e Lucas</h1>
-</fotter>
+    <fotter class="fotter">
+        <h1>@Site do Kaynã e Lucas</h1>
+    </fotter>
 
-    <script src="assets/JavaScript/script.js">
+    <script src="../../script.js">
     </script>
 </body>
+
 </html>

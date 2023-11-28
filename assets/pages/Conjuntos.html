@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Now!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles/nav-bar.css">
     <link rel="stylesheet" href="../styles/var.css">
     <link rel="stylesheet" href="../styles/section.css">
     <link rel="stylesheet" href="../styles/fotter.css">
 
 </head>
+
 <body>
 
     <header class="nav-bar">
-        <a class="icon" href="../../index.html"><h1>Math Now!</h1></a>
+        <a class="icon" href="../../index.html">
+            <h1>Math Now!</h1>
+        </a>
         <nav>
             <ul class="nav-items">
                 <li><a href="../../index.html">HOME</a></li>
@@ -37,57 +43,82 @@
     </header>
 
 
-<section class="banner">
+    <section class="banner">
 
-</section>
+    </section>
 
-<section class="section">
-    <article class="content">
-    <div>
-        <h1 class="title">Conjuntos Numéricos</h1>
-            <h2 class="data">19/09/2023</h2>
-            <p class="text">
-                Sub Conjuntos numéricos são oconjunto dos números reais é formado pela união dos seguintes conjuntos de números: naturais, inteiros, racionais e os irracionais.
-            </p>
-    </div>
-    <div>
-        <h2 class="title">Conjunto dos Números Naturais (N)</h2>
-        <p class="text">   Regra de três para grandezas diretamente proporcionais.
-            O conjunto dos números naturais é representado por N. Ele reúne os números que usamos para contar e é infinito.
-        </p>
+    <section class="section">
 
-        <p class="text">
-            Ex:N*{1, 2, 3, 4, 5,..., n, …} conjuntos naturais são não-nulos, ou seja, sem o zero”0”.
-        </p>
-    </div>
+        <aside class="aside">
+            <nav class="aside-nav">
+                <h1>Conteúdos</h1>
+                <ul>
+                    <li onclick="rolar(350)" class="aside-item">Conjuntos Numéricos</li>
+                    <li onclick="rolar(1700)" class="aside-item">Referências</li>
+                </ul>
+            </nav>
+        </aside>
 
-    <div>
-        <h2 class="title">Conjunto dos Números Racionais (Q)</h2>
-        <p class="text">O conjunto dos números racionais é representado por Q. Reúne todos os números que podem ser escritos na forma p/q, sendo p e q números inteiros e q≠0.
-        </p>
-    </div>
+        <article class="content">
+            <div>
+                <h1 class="title">Conjuntos Numéricos</h1>
+                <h2 class="data">19/09/2023</h2>
+                <p class="text">
+                    Sub Conjuntos numéricos são oconjunto dos números reais é formado pela união dos seguintes conjuntos
+                    de números: naturais, inteiros, racionais e os irracionais.
+                </p>
+            </div>
+            <div>
+                <h2 class="title">Conjunto dos Números Naturais (N)</h2>
+                <p class="text"> Regra de três para grandezas diretamente proporcionais.
+                    O conjunto dos números naturais é representado por N. Ele reúne os números que usamos para contar e
+                    é infinito.
+                </p>
 
-    <div>
-        <h2 class="title">Conjunto dos Números Irracionais (I)</h2>
-        <p class="text">
-            O conjunto dos números irracionais é representado por I. Reúne os números decimais não exatos com uma representação infinita e não periódica, por exemplo: 3,141592... ou 1,203040...
-        </p>
-    </div>
-    <div>
-        <h2 class="title">Conjunto dos Números Reais (R)</h2>
-        <p class="text">
-            O conjunto dos números reais  é representado por R. Esse conjunto é formado pelos números racionais (Q) e irracionais (I). Assim, temos que R = Q ∪ I. Além disso, N, Z, Q e I são subconjuntos de R.
-        </p>
-    </div>
-    </article>
-</section>
+                <p class="text">
+                    Ex:N*{1, 2, 3, 4, 5,..., n, …} conjuntos naturais são não-nulos, ou seja, sem o zero”0”.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="title">Conjunto dos Números Racionais (Q)</h2>
+                <p class="text">O conjunto dos números racionais é representado por Q. Reúne todos os números que podem
+                    ser escritos na forma p/q, sendo p e q números inteiros e q≠0.
+                </p>
+
+                <p class="text">Ex: = {0, ±1, ±1/2, ±1/3, ..., ±2, ±2/3, ±2/5, ..., ±3, ±3/2, ±3/4, ...}</p>
+            </div>
+
+            <div>
+                <h2 class="title">Conjunto dos Números Irracionais (I)</h2>
+                <p class="text">
+                    O conjunto dos números irracionais é representado por I. Reúne os números decimais não exatos com
+                    uma representação infinita e não periódica, por exemplo: 3,141592... ou 1,203040...
+                </p>
+            </div>
+            <div>
+                <h2 class="title">Conjunto dos Números Reais (R)</h2>
+                <p class="text">
+                    O conjunto dos números reais é representado por R. Esse conjunto é formado pelos números racionais
+                    (Q) e irracionais (I). Assim, temos que R = Q ∪ I. Além disso, N, Z, Q e I são subconjuntos de R.
+                </p>
+            </div>
+
+            <div>
+                <h2>Referências</h2>
+                <div class="ref">
+                    <a class="link"
+                        href="https://www.todamateria.com.br/conjuntos-numericos/#:~:text=Conjunto%20dos%20Números%20Racionais%20">todamateria.com.br<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+        </article>
+    </section>
 
 
-<fotter class="fotter">
-    <h1>@Site do Kaynã e Lucas</h1>
-</fotter>
-
-    <script src="assets/JavaScript/script.js">
+    <fotter class="fotter">
+        <h1>@Site do Kaynã e Lucas</h1>
+    </fotter>
+    <script src="../../script.js">
     </script>
 </body>
+
 </html>

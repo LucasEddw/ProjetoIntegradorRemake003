@@ -12,13 +12,48 @@
   display: flex;
   flex-direction: column;
   color: var(--font-color);
-  padding: 8vw 12vw 12vw 12vw;
+  padding: 8vw 16vw 12vw 12vw;
   gap: 100px;
   background: var(--bg-color);
+}
+.section .aside {
+  position: absolute;
+  right: 4vw;
+  width: 20%;
+}
+.section .aside .aside-nav {
+  font-size: 24px;
+  font-weight: 400;
+}
+.section .aside .aside-nav h1 {
+  font-size: 30px;
+  transform: translateX(-25px);
+}
+.section .aside .aside-nav ul {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.section .aside .aside-nav ul .aside-item {
+  position: relative;
+  cursor: pointer;
+}
+.section .aside .aside-nav ul .aside-item::before {
+  content: "";
+  position: absolute;
+  left: -1.4rem;
+  font-weight: 900;
+  font-size: 18px;
+  top: 0.25rem;
+  color: #0982d2;
+  cursor: pointer;
 }
 .section .content {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 .section .content .data {
   font-size: 16px;
@@ -34,7 +69,7 @@
   letter-spacing: 0.1rem;
   margin-bottom: 20px;
 }
-.section .content a {
+.section .content a.home {
   color: var(--bg-color);
   font-size: 1.2rem;
   padding: 10px 20px;
@@ -43,6 +78,19 @@
   background-color: var(--banner-bg-color);
   width: 130px;
   text-align: center;
+}
+.section .content .ref {
+  display: flex;
+  flex-direction: column;
+}
+.section .content .ref a.link {
+  color: var(--banner-bg-color);
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 5px;
+}
+.section .content .ref a.link i {
+  margin-left: 5px;
 }
 .section .content h2:not(.data) {
   font-size: 2.8rem;
@@ -121,6 +169,12 @@
   body .section {
     padding: 4vw 6vw 6vw 6vw;
     gap: 70px;
+  }
+  body .section .aside {
+    display: none;
+  }
+  body .section .content {
+    width: 100%;
   }
   body .section .content .title {
     font-size: 45px;

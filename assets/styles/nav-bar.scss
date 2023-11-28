@@ -1,8 +1,6 @@
-
-
-.nav-bar{
+.nav-bar {
     position: fixed;
-    z-index: 1!important;
+    z-index: 1 !important;
     top: 0;
     display: flex;
     justify-content: center;
@@ -13,27 +11,27 @@
     height: 57px;
     width: 100%;
 
-    .icon{
+    .icon {
         position: absolute;
         left: 0;
-        margin: 18px;   
+        margin: 18px;
         color: var(--banner-bg-color);
     }
 
-    .nav-items{
+    .nav-items {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         gap: 30px;
         font-size: 20px;
-        li{
-            a{
+        li {
+            a {
                 color: var(--font-color);
                 font-weight: 600;
                 position: relative;
             }
-            a:before{
+            a:before {
                 content: "";
                 position: absolute;
                 bottom: -3px;
@@ -45,21 +43,22 @@
                 background-color: #45b2fb;
                 border-radius: 5px;
             }
-            a:hover::before{
+            a:hover::before {
                 transition: 0.3s;
                 width: 100%;
             }
         }
     }
-    .nav-menu-icon{
+    .nav-menu-icon {
         position: absolute;
         display: none;
         right: 20px;
-        top:15px;
+        top: 15px;
         font-size: 25px;
         cursor: pointer;
     }
-    .nav-menu{
+    .nav-menu {
+        padding: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -72,62 +71,91 @@
         font-size: 20px;
         padding-top: 20px;
         background-color: var(--fotter-smoth-bg-color);
-        li a{
+        .aside-nav {
+            color: var(--bg-color);
+            font-size: 24px;
+            font-weight: 400;
+            h1 {
+                font-size: 30px;
+                transform: translateX(-25px);
+            }
+            ul {
+                display: flex;
+                justify-content: start;
+                align-items: start;
+                flex-direction: column;
+                gap: 20px;
+
+                .aside-item {
+                    position: relative;
+                    cursor: pointer;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: -1.4rem;
+                        font-weight: 900;
+                        font-size: 18px;
+                        top: 0.25rem;
+                        color: #0982d2;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        li a {
             color: var(--bg-color);
             font-weight: 600;
         }
     }
-    input[type=checkbox]{
+    input[type="checkbox"] {
         display: none;
     }
-    input:checked + label .nav-menu{
+    input:checked + label .nav-menu {
         right: 1px;
         transition: 0.4s;
         display: flex;
     }
-    input + label .nav-menu{
+    input + label .nav-menu {
         transition: 0.8s;
     }
 }
 
 @media (max-width: 800px) {
-    body{
+    body {
         overflow-x: hidden;
-    .nav-bar{
-        .nav-items{
-            display: none;
-        }
-        .nav-menu-icon{
-            display: block;
-        }
+        .nav-bar {
+            .nav-items {
+                display: none;
+            }
+            .nav-menu-icon {
+                display: block;
+            }
 
-        .nav-menu{
-            width: 50vw;
-        }
-    }}
-}
-
-@media (max-width: 500px) {
-    body{
-        overflow-x: hidden;
-    .nav-bar{
-        .nav-items{
-            display: none;
-        }
-        .nav-menu-icon{
-            display: block;
-        }
-
-        .nav-menu{
-            width: 100%;
-            height: auto;
-            padding-bottom: 20px;
-            height: 100vh;
-            font-size: 2rem;
+            .nav-menu {
+                width: 50vw;
+            }
         }
     }
 }
+
+@media (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+        .nav-bar {
+            .nav-items {
+                display: none;
+            }
+            .nav-menu-icon {
+                display: block;
+            }
+
+            .nav-menu {
+                width: 100%;
+                height: auto;
+                padding-bottom: 20px;
+                height: 100vh;
+                font-size: 2rem;
+            }
+        }
+    }
 }
-
-
-

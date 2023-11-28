@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Now!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles/nav-bar.css">
     <link rel="stylesheet" href="../styles/var.css">
     <link rel="stylesheet" href="../styles/section.css">
     <link rel="stylesheet" href="../styles/fotter.css">
 
 </head>
+
 <body>
 
     <header class="nav-bar">
-        <a class="icon" href="../../index.html"><h1>Math Now!</h1></a>
+        <a class="icon" href="../../index.html">
+            <h1>Math Now!</h1>
+        </a>
         <nav>
             <ul class="nav-items">
                 <li><a href="../../index.html">HOME</a></li>
@@ -37,40 +43,80 @@
     </header>
 
 
-<section class="banner">
+    <section class="banner">
 
-</section>
+    </section>
 
-<section class="section">
-    <article class="content">
-    <div>
-        <h1 class="title">Equação de 1º grau</h1>
-            <h2 class="data">19/09/2023</h2>
-            <p class="text">
-                Uma equação do 1º grau, também conhecida como equação linear, é uma sentença matemática que envolve uma única incógnita elevada à primeira potência. Essas equações geralmente têm a forma:
-            </p>
-            <p class="text">
-                ax + b = 0
-            </p>
-            <p class="text">
-                onde "a" e "b" são números reais, com "a" sendo diferente de zero. O objetivo ao resolver uma equação do 1º grau é encontrar a solução ou raiz, que é o valor da incógnita "x" que torna a equação verdadeira.
-            </p>
-            <p class="text">
-                Para resolver equações do 1º grau, você pode utilizar diversas técnicas, como a propriedade distributiva, simplificação de termos, isolamento da variável "x" do lado esquerdo da equação, e aplicação das operações de adição, subtração, multiplicação e divisão de forma apropriada. As soluções podem ser únicas (um único valor de "x") ou infinitas, dependendo da natureza da equação.
-            </p>
-            <p class="text">
-                Em resumo, equações do 1º grau são fundamentais na matemática e na resolução de problemas do dia a dia, pois permitem encontrar valores desconhecidos em situações lineares.
-            </p>
-    </div>
-    </article>
-</section>
+    <section class="section">
+
+        <aside class="aside">
+            <nav class="aside-nav">
+                <h1>Conteúdos</h1>
+                <ul>
+                    <li onclick="rolar(350)" class="aside-item">Equação de Primeiro Grau</li>
+                    <li onclick="rolar(1100)" class="aside-item">Exemplos</li>
+                    <li onclick="rolar(1900)" class="aside-item">Referências</li>
+                </ul>
+            </nav>
+        </aside>
 
 
-<fotter class="fotter">
-    <h1>@Site do Kaynã e Lucas</h1>
-</fotter>
+        <article class="content">
+            <div>
+                <h1 class="title">Equação de Primeiro Grau</h1>
+                <h2 class="data">19/09/2023</h2>
+                <p class="text">
+                    Uma equação do 1º grau, também conhecida como equação linear, é uma sentença matemática que envolve uma única incógnita elevada à primeira potência. Essas equações geralmente têm a forma:
+                </p>
+                <p class="text">
+                    ax + b = 0
+                </p>
+                <p class="text">
+                    onde "a" e "b" são números reais, com "a" sendo diferente de zero. O objetivo ao resolver uma equação do 1º grau é encontrar a solução ou raiz, que é o valor da incógnita "x" que torna a equação verdadeira.
+                </p>
+                <p class="text">
+                    Para resolver equações do 1º grau, você pode utilizar diversas técnicas, como a propriedade distributiva, simplificação de termos, isolamento da variável "x" do lado esquerdo da equação, e aplicação das operações de adição, subtração, multiplicação e divisão de forma apropriada. As soluções podem ser únicas (um único valor de "x") ou infinitas, dependendo da natureza da equação.
+                </p>
+                <p class="text">
+                    Em resumo, equações do 1º grau são fundamentais na matemática e na resolução de problemas do dia a dia, pois permitem encontrar valores desconhecidos em situações lineares.
+                </p>
+            </div>
 
-    <script src="assets/JavaScript/script.js">
+            <div>
+                <h2>Exemplos</h2>
+                <p class="text">2x-6=0</p>
+                <p class="text">Resolução: </p>
+                <p class="text">2x-6+6=0+6</p>
+                <p class="text">2x=6</p>
+                <p class="text">Agora dividiremos por dois:</p>
+                <p class="text">2x/2=6/2</p>
+                <p class="text">x=6</p>
+                <p class="text">
+                    "Encontramos como solução da equação x = 3. Isso significa que se substituirmos 3 no lugar do x, a equação será verdadeira:"
+                </p>
+                <p class="text">2*6-6=0</p>
+                <p class="text">6-6=0</p>
+                <p class="text">0=0</p>
+            </div>
+            <div>
+                <h2>Referências</h2>
+                <div class="ref">
+                    <a class="link"
+                        href="https://brasilescola.uol.com.br/matematica/equacao-do-1-grau.htm">brasilescola.uol.com.br<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a class="link"
+                        href="https://www.somatematica.com.br/fundam/equacoes1.php">somatematica.com.br<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+    <fotter class="fotter">
+        <h1>@Site do Kaynã e Lucas</h1>
+    </fotter>
+
+    <script src="../../script.js">
     </script>
 </body>
+
 </html>

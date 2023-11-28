@@ -1,5 +1,3 @@
-
-
 const menuIcon = document.getElementById('menu-icon');
 const navMenu = document.querySelector('.nav-menu');
 const body = document.getElementsByTagName('body');
@@ -26,4 +24,10 @@ function search(){
             x[i].style.display = "flex"
         }
     }
+}
+
+function rolar(position){
+    window.scrollTo({
+        top: position,
+    });
 }
